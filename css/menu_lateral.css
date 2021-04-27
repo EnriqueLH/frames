@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #28B463;
+}
+
+.navegacion{
+    margin: 30px auto;
+    background: #000;
+}
+
+.actores_li {
+    background-color: #28B463;
+    width: 100vw;
+    font-weight: bold;
+    font-size: large;
+    color: white !important;
+}
+
+.navegacion ul{
+list-style: none;
+}
+
+.menu > li{
+/*position: relative;*/
+display: inline-block;
+}
+
+.menu > li > a{
+display: block;
+padding: 15px 20px;
+color: #2980B9;
+font-family: 'Open sans';
+text-decoration: none;
+}
+
+.menu li a:hover{
+color: #5B2C6F;
+transition: all .3s;
+}
+
+/* submenu */
+
+.submenu{
+    position: absolute;
+    background: #000;
+    width: 9%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #2980B9;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+visibility: visible;
+opacity: 1;
+}
+
+iframe{
+    border: 0px solid white;
+}
